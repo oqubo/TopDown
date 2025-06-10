@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     private PlayerController player;
+    private SistemaInventario inventario;
+    public SistemaInventario Inventario { get => inventario; }
+    
 
 //------------------------------
     // CREACION
@@ -55,6 +58,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log($"Nueva escena cargada: {scene.name}");
         player = FindFirstObjectByType<PlayerController>();
+        inventario = FindFirstObjectByType<SistemaInventario>();
 
     }
 

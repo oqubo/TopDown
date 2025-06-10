@@ -99,10 +99,14 @@ public class PlayerController : MonoBehaviour
         colliderDelante = LanzarCheck();
         if (colliderDelante)
         {
-            if (colliderDelante.CompareTag("NPC"))
-            {
-                colliderDelante.GetComponent<NPC>().Interactuar();
-            }
+            // otra forma de hacerlo
+            /*
+            Interactuable interactuable = colliderDelante.GetComponent<Interactuable>();
+            if (interactuable != null) interactuable.Interactuar();
+            */
+
+            if(colliderDelante.TryGetComponent<Interactuable>(out Interactuable interactuable)) interactuable.Interactuar();
+            
         }
     }
 

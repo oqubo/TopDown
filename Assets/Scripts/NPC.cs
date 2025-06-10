@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
-public class NPC : MonoBehaviour
+public class NPC : MonoBehaviour, Interactuable
 {
 
     [SerializeField, TextArea(1, 5)] private string[] frases;
