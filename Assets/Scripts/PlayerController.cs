@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     // interaccion
     private Vector3 puntoInteraccion;
     [SerializeField] private float radioInteraccion;
-    [SerializeField] private LayerMask queEsColisionable;
     private Collider2D colliderDelante;
 
 
@@ -32,11 +31,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Mover();
+       Mover();
 
     }
 
-    private void Mover()
+    public void Mover()
     {
         // para simular el raw input con las player input actions
         // he usado Mathf.Sign para que lo cambie a 1 o -1
@@ -49,7 +48,7 @@ public class PlayerController : MonoBehaviour
 
         inputH = Mathf.Abs(input.x) < threshold ? 0 : (int)Mathf.Sign(input.x);
         inputV = Mathf.Abs(input.y) < threshold ? 0 : (int)Mathf.Sign(input.y);
-        
+
         // evitar diagonales: prioriza horizontal sobre vertical
         if (inputH != 0) inputV = 0;
         else if (inputV != 0) inputH = 0;
@@ -99,8 +98,20 @@ public class PlayerController : MonoBehaviour
 
     private Collider2D LanzarCheck()
     {
-        return Physics2D.OverlapCircle(puntoInteraccion, radioInteraccion, queEsColisionable);
+        return Physics2D.OverlapCircle(puntoInteraccion, radioInteraccion);
 
+    }
+    
+    public void LanzarInteraccion()
+    {
+        colliderDelante = LanzarCheck();
+        if (colliderDelante)
+        {
+            if (colliderDelante.CompareTag("NPC"))
+            {
+                colliderDelante.GetComponent<NPC>().Interactuar();
+            }
+        }
     }
 
 }
