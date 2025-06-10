@@ -18,7 +18,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 puntoInteraccion;
     [SerializeField] private float radioInteraccion;
     private Collider2D colliderDelante;
-
+    private bool interactuando;
+    public bool Interactuando { get => interactuando; set => interactuando = value; }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
         else if (inputV != 0) inputH = 0;
 
 
-        if (!moviendo && (inputH != 0 || inputV != 0))
+        if (!interactuando && !moviendo && (inputH != 0 || inputV != 0))
         {
             anim.SetBool("andando", true);
             anim.SetFloat("inputH", inputH);

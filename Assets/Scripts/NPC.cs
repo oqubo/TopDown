@@ -21,6 +21,8 @@ public class NPC : MonoBehaviour
 
     public void Interactuar()
     {
+        GameManager.Instance.CambiarEstadoPlayerInteractuando(true);
+
         cuadroDialogo.SetActive(true);
         if (!hablando)
         {
@@ -47,10 +49,14 @@ public class NPC : MonoBehaviour
 
     private void TerminarDialogo()
     {
+        StopAllCoroutines(); 
         hablando = false;
         cuadroDialogo.SetActive(false);
         textoDialogo.text = string.Empty;
         indiceActual = -1;
+        GameManager.Instance.CambiarEstadoPlayerInteractuando(false);
+
+        Debug.Log("Diálogo terminado.");
     }
 
     IEnumerator EscribirFrase()
