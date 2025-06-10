@@ -55,8 +55,6 @@ public class NPC : MonoBehaviour
         textoDialogo.text = string.Empty;
         indiceActual = -1;
         GameManager.Instance.CambiarEstadoPlayerInteractuando(false);
-
-        Debug.Log("Diálogo terminado.");
     }
 
     IEnumerator EscribirFrase()
