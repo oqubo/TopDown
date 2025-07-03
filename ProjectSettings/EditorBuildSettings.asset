@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e678a07cd27254a798beda91f849ab3e
+  - enabled: 1
     path: Assets/Carlos/Pueblo.unity
     guid: 6048fcd5943a24d0dbd442464d489d87
   - enabled: 1
@@ -15,17 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/FreeFlowCombatTest.unity
     guid: 432f0855188326341b57f448bd021d7c
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 91c5c1ad173cc4a43926947d5c2517d5
-  - enabled: 1
-    path: Assets/Scenes/ExploreTest.unity
-    guid: 86463b8987077794e8b27c61e6c16cb9
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Scenes/Score.unity
     guid: 40e31f9b76cc08c4fb57a19c85b0acb3
+  - enabled: 1
+    path: Assets/Scenes/ExploreTest.unity
+    guid: 57b497b327d0b4463b3a4b25132fc479
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

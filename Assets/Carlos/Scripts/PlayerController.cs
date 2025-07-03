@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
         Mover();
 
         if (Input.GetKeyDown(KeyCode.E)) LanzarInteraccion();
+        
 
     }
 

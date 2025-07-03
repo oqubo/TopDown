@@ -1,0 +1,120 @@
+newmtl criffp_lm73
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd criffp_lm73.png
+map_d criffp_lm73.png
+newmtl ngrass_lm66
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd ngrass_lm66.png
+map_d ngrass_lm66.png
+newmtl file1Material
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd file1Material.png
+map_d file1Material.png
+newmtl criff_lm64
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd criff_lm64.png
+map_d criff_lm64.png
+newmtl nectgr_lm74
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd nectgr_lm74.png
+map_d nectgr_lm74.png
+newmtl seaside3_lm67
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd seaside3_lm67.png
+map_d seaside3_lm67.png
+newmtl imped_lm67
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd imped_lm67.png
+map_d imped_lm67.png
+newmtl tree01_lm56
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd tree01_lm56.png
+map_d tree01_lm56.png
+newmtl conttree_b_lm55
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd conttree_b_lm55.png
+map_d conttree_b_lm55.png
+newmtl conttree_t_lm55
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd conttree_t_lm55.png
+map_d conttree_t_lm55.png
+newmtl blueglayp_lm64
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd blueglayp_lm64.png
+map_d blueglayp_lm64.png
+newmtl blueglay_lm52
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd blueglay_lm52.png
+map_d blueglay_lm52.png
+newmtl tshadow_lm24
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd tshadow_lm24.png
+map_d tshadow_lm24.png
+newmtl conttree_b_lm54
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd conttree_b_lm54.png
+map_d conttree_b_lm54.png
+newmtl conttree_t_lm54
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd conttree_t_lm54.png
+map_d conttree_t_lm54.png
+newmtl nhana_lm65
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd nhana_lm65.png
+map_d nhana_lm65.png
+newmtl lakep_lm5
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd lakep_lm5.png
+map_d lakep_lm5.png
+newmtl lake_lm40
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd lake_lm40.png
+map_d lake_lm40.png
+newmtl puddle_b_lm12
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd puddle_b_lm12.png
+map_d puddle_b_lm12.png
+newmtl dhole_lm38
+Ka 0.9725 0.9725 0.9725
+Kd 0.7843 0.7843 0.7843
+d 1.0000
+map_Kd dhole_lm38.png
+map_d dhole_lm38.png

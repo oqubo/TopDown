@@ -13,10 +13,13 @@ public class FFCPlayer : MonoBehaviour
     public float CurrentAttackPoints = 1;
     
     private bool _blockMovement = false;
+
+    private Animator anim;
+    private float h, v;
     
     void Start()
     {
-        // Nothing to add for now
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -29,6 +32,9 @@ public class FFCPlayer : MonoBehaviour
 
     private void UpdateMovement()
     {
+        h = 0;
+        v = 0;
+        
         if (_blockMovement)
             return;
         
@@ -36,25 +42,33 @@ public class FFCPlayer : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(MathConstants.Left * (Time.deltaTime * Speed));
+            h = -1;
         }
         
         // Right
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(MathConstants.Right * (Time.deltaTime * Speed));
+            h = 1;
         }
         
         // Up
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             transform.Translate(MathConstants.Up * (Time.deltaTime * Speed));
+            v = 1;
         }
         
         // Down
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             transform.Translate(MathConstants.Down * (Time.deltaTime * Speed));
+            v = -1;
         }
+        
+        anim.SetBool("andando", true);
+        anim.SetFloat("inputV", v);
+        anim.SetFloat("inputH", h);
     }
 
     void UpdateAttack()

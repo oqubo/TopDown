@@ -12,6 +12,6 @@ public class FFCScoreUpdater : MonoBehaviour
 
     void Update()
     {
-        _scoreUIText.text = "Score: " + GameInstance.Singleton.currentScore;
+        _scoreUIText.text = "Puntos: " + GameInstance.Singleton.currentScore;
     }
 }

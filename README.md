@@ -18,22 +18,26 @@ Explora un mundo desde una vista cenital clásica donde cada paso cuenta. Habla 
 - Moverse: Flechas del teclado
 - Interactuar / Recoger: E
 - Abrir inventario: I
-- Pausar juego: Escape
+- Combate: 
+Apuntar con ratón
+Ataque: click izquierdo
+Parry: click derecho
+
 
 # Características principales
 - Exploración 2D estilo top-down con desplazamiento por casillas.
 - Interacción con NPCs y objetos, inventario funcional.
-- Mazmorra procedural:
-- Salas interconectadas generadas aleatoriamente.
-- Puerta verde en la sala inicial para volver al pueblo.
-- Puerta roja hacia el jefe, ubicada en la sala más lejana.
+- Mazmorra procedural con salas interconectadas generadas aleatoriamente.
 - Trampas y peligros: Esquiva bolas rojas en movimiento que te hacen daño.
 - Monedas coleccionables que otorgan puntos.
-- Combate final en estilo free flow contra un jefe al terminar la mazmorra.
+- Puerta verde en la sala inicial para volver al pueblo.
+- Puerta roja hacia el jefe, ubicada en la sala más lejana.
+- Combate final en estilo free flow contra varios enemigos.​
 
 
-# Funcionalidades implementadas
+# Detalles de implementación
 - Eventos lanzados al recibir daño o recoger monedas, observados por UIManager y SoundManager para actualizar interfaz y sonido.
 - Singletons para gestionar UI, sonido y lógica del juego.
 - Máquinas de estados
 - Diseño orientado a objetos para enemigos, trampas y lógica general (Herencia, Encapsulamiento, etc).
+

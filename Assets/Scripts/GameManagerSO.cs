@@ -19,8 +19,8 @@ public class GameManagerSo : ScriptableObject
         _levelHandler = FindFirstObjectByType<LevelHandler>();
         if (_levelHandler == null)
         {
-            Debug.LogError("LevelHandler not found");
-            Application.Quit();
+            Debug.Log("LevelHandler not found");
+            //Application.Quit();
             return;
         }
 
